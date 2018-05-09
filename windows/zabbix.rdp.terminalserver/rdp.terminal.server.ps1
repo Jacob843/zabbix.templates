@@ -6,28 +6,28 @@ Param(
 )
 
 # Nome dos Usuarios Ativos
-if ( $select -eq 'ATIVO' )
+if ( $select -eq 'ACTIVE' )
 {
 Import-Module PSTerminalServices
 Get-TSSession -State Active -ComputerName localhost | foreach {$_.UserName}
 }
 
 # Total de Usuarios Ativos
-if ( $select -eq 'ATIVONUM' )
+if ( $select -eq 'ACTIVENUM' )
 {
 Import-Module PSTerminalServices
 Get-TSSession -State Active -ComputerName localhost | foreach {$_.UserName} | Measure-Object -Line | select-object Lines | select-object -ExpandProperty Lines
 }
 
 # Nome dos Usuarios Inativos
-if ( $select -eq 'INATIVO' )
+if ( $select -eq 'INACTIVE' )
 {
 Import-Module PSTerminalServices
 Get-TSSession -State Disconnected -ComputerName localhost | where { $_.SessionID -ne 0 } | foreach {$_.UserName}
 }
 
 # Total de Usuarios Inativos
-if ( $select -eq 'INATIVONUM' )
+if ( $select -eq 'INACTIVENUM' )
 {
 Import-Module PSTerminalServices
 Get-TSSession -State Disconnected -ComputerName localhost | where { $_.SessionID -ne 0 } | foreach {$_.UserName} | Measure-Object -Line | select-object Lines | select-object -ExpandProperty Lines

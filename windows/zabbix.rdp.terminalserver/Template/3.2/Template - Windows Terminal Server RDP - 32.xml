@@ -4,36 +4,36 @@
     <date>2018-01-05T17:40:01Z</date>
     <groups>
         <group>
-            <name>SEM GRUPO</name>
+            <name>No Group</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>Template - Windows Terminal Server RDP</template>
             <name>Template - Windows Terminal Server RDP</name>
-            <description># Desenvolvido por Diego Cavalcante - 10/02/2017&#13;
-# Monitoramento Windows RDP - Terminal Server</description>
+            <description># Developed by Diego Cavalcante - 10/02/2017&#13;
+# Monitor Windows RDP - Terminal Server</description>
             <groups>
                 <group>
-                    <name>SEM GRUPO</name>
+                    <name>No Group</name>
                 </group>
             </groups>
             <applications>
                 <application>
-                    <name>★ RDP ★ Terminal Server</name>
+                    <name>RDP Terminal Server</name>
                 </application>
                 <application>
-                    <name>★ Serviços ★</name>
+                    <name>Service</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>Porta</name>
+                    <name>Port</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.port[,{$RDPPORTA}]</key>
+                    <key>net.tcp.port[,{$RDPPORT}]</key>
                     <delay>300</delay>
                     <history>7</history>
                     <trends>30</trends>
@@ -60,25 +60,25 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Monitora se a porta do TS está aberta.</description>
+                    <description>Monitors if the port of the terminal server is open.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ RDP ★ Terminal Server</name>
+                            <name>RDP Terminal Server</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Check Porta</name>
+                        <name>Port Check Status</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Usuários Ativos Total</name>
+                    <name>Total Active Users</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rdp.terminal.server[ATIVONUM]</key>
+                    <key>rdp.terminal.server[ACTIVENUM]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>30</trends>
@@ -105,23 +105,23 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Número total de usuários ativos no Terminal Server.</description>
+                    <description>Total number of active users on the terminal server.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ RDP ★ Terminal Server</name>
+                            <name>RDP Terminal Server</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Usuários Ativos</name>
+                    <name>Active Users</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rdp.terminal.server[ATIVO]</key>
+                    <key>rdp.terminal.server[ACTIVE]</key>
                     <delay>120</delay>
                     <history>30</history>
                     <trends>0</trends>
@@ -148,18 +148,18 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Monitora quais usuários estão conectados ao Terminal Server.</description>
+                    <description>Monitors which users are connected to the terminal server.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ RDP ★ Terminal Server</name>
+                            <name>RDP Terminal Server</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Usuários Dispositivos</name>
+                    <name>User Devices</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -191,23 +191,23 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Monitora o nome dos dispositivos dos usuários do Terminal Server.</description>
+                    <description>Monitors the names of the devices of the terminal server users.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ RDP ★ Terminal Server</name>
+                            <name>RDP Terminal Server</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Usuários Inativos Total</name>
+                    <name>Total Inactive Users</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rdp.terminal.server[INATIVONUM]</key>
+                    <key>rdp.terminal.server[INACTIVENUM]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>30</trends>
@@ -234,23 +234,23 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Monitora o total de usuários que estão desconectados do Terminal Server.</description>
+                    <description>Moniotrs the total number of users who are disconnected from the terminal server.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ RDP ★ Terminal Server</name>
+                            <name>RDP Terminal Server</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Usuários Inativos</name>
+                    <name>Inactive Users</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>rdp.terminal.server[INATIVO]</key>
+                    <key>rdp.terminal.server[INACTIVE]</key>
                     <delay>120</delay>
                     <history>30</history>
                     <trends>0</trends>
@@ -277,18 +277,18 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Monitora quais usuários estão desconectados do Terminal Server.</description>
+                    <description>Monitors which users are disconnected from the terminal server.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ RDP ★ Terminal Server</name>
+                            <name>RDP Terminal Server</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Usuários IP</name>
+                    <name>User IPs</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -320,11 +320,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Monitora o IP dos dispositivos dos usuários do Terminal Server.</description>
+                    <description>Monitors the IP addresses of the terminal server users' devices.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ RDP ★ Terminal Server</name>
+                            <name>RDP Terminal Server</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -363,17 +363,17 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Serviço: TermService&#13;
+                    <description>Service: TermService&#13;
 Nome: Remote Desktop Services&#13;
-Descrição: Permite que os usuários se conectem interativamente a um computador remoto. Remote Desktop e Remote Desktop Session Host Server dependem deste serviço. Para evitar o uso remoto deste computador, desmarque as caixas de seleção na guia Remoto do item do painel de controle Propriedades do sistema.</description>
+Description: Allows users to connect interactively to a remote computer. Remote Desktop and REmote Desktop Session Host Server d epend on this service. To prevent remote use of this computer, clear the check boxes on the Remote tab of the System Properties control panel item.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ Serviços ★</name>
+                            <name>Service</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Serviço</name>
+                        <name>Service Status</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -410,17 +410,17 @@ Descrição: Permite que os usuários se conectem interativamente a um computado
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Serviço: TermServLicensing&#13;
+                    <description>Service: TermServLicensing&#13;
 Nome: Remote Desktop Licensing&#13;
-Descrição: Fornece licenças registradas para clientes de Serviços de Área de Trabalho Remota. Se esse serviço for interrompido, o servidor não estará disponível para emitir licenças de Serviços de Área de Trabalho Remota aos clientes quando eles forem solicitados.</description>
+Description: Provides registered licenses for Remote Desktop Services clients. If this service is stopped, the server is not available to issue Remote Desktop Services licenses to clients when they are requested.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ Serviços ★</name>
+                            <name>Service</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Serviço</name>
+                        <name>Service Status</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -434,52 +434,52 @@ Descrição: Fornece licenças registradas para clientes de Serviços de Área d
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template - Windows Terminal Server RDP:rdp.terminal.server[ATIVONUM].last()}&gt;{$RDPA}</expression>
+            <expression>{Template - Windows Terminal Server RDP:rdp.terminal.server[ACTIVENUM].last()}&gt;{$RDPA}</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>RDP ({ITEM.LASTVALUE}) Usuários Conectados</name>
+            <name>RDP ({ITEM.LASTVALUE}) Online Users</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Existem muitos usuários conectados via TS no servidor no momento, pode causar sobrecarga e perda de desempenho.&#13;
+            <description>There are too many active users connected to this terminal server, it may cause performance issues.&#13;
 &#13;
-Limite para este servidor = {$RDPA}</description>
+Limit of this server = {$RDPA}</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template - Windows Terminal Server RDP:rdp.terminal.server[INATIVONUM].last()}&gt;{$RDPI}</expression>
+            <expression>{Template - Windows Terminal Server RDP:rdp.terminal.server[INACTIVENUM].last()}&gt;{$RDPI}</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>RDP ({ITEM.LASTVALUE}) Usuários Inativos</name>
+            <name>RDP ({ITEM.LASTVALUE}) Inactive Users</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>1</priority>
-            <description>Existem muitos usuários inativos via TS no servidor no momento, pode causar sobrecarga e perda de desempenho.&#13;
+            <description>There are too many inactive users connected to this terminal server, it may cause performance issues.&#13;
 &#13;
-Limite para este servidor = {$RDPI}</description>
+Limit of this server = {$RDPI}</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template - Windows Terminal Server RDP:net.tcp.port[,{$RDPPORTA}].last(0)}=0</expression>
+            <expression>{Template - Windows Terminal Server RDP:net.tcp.port[,{$RDPPORT}].last(0)}=0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>RDP Porta ({ITEM.LASTVALUE})</name>
+            <name>RDP Port ({ITEM.LASTVALUE})</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Porta TS não está na escuta.</description>
+            <description>Terminal server port is not listening.</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
@@ -495,9 +495,9 @@ Limite para este servidor = {$RDPI}</description>
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Serviço: TermServLicensing&#13;
+            <description>Service: TermServLicensing&#13;
 Nome: Remote Desktop Licensing&#13;
-Descrição: Fornece licenças registradas para clientes de Serviços de Área de Trabalho Remota. Se esse serviço for interrompido, o servidor não estará disponível para emitir licenças de Serviços de Área de Trabalho Remota aos clientes quando eles forem solicitados.</description>
+Description: Provides registered licenses for Remote Desktop Services clients. If this service is stopped, the server is not available to issue Remote Desktop Services licenses to clients when they are requested.</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
@@ -513,9 +513,9 @@ Descrição: Fornece licenças registradas para clientes de Serviços de Área d
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Serviço: TermService&#13;
+            <description>Service: TermService&#13;
 Nome: Remote Desktop Services&#13;
-Descrição: Permite que os usuários se conectem interativamente a um computador remoto. Remote Desktop e Remote Desktop Session Host Server dependem deste serviço. Para evitar o uso remoto deste computador, desmarque as caixas de seleção na guia Remoto do item do painel de controle Propriedades do sistema.</description>
+Description: Allows users to connect interactively to a remote computer. Remote Desktop and Remote Desktop Session Host Server depend on this service. To prevent remote use of this computer, clear the check boxes on the Remote tab of the System Properties control panel item.</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
@@ -524,7 +524,7 @@ Descrição: Permite que os usuários se conectem interativamente a um computado
     </triggers>
     <graphs>
         <graph>
-            <name>★ RDP ★ Estatísticas de Conexões</name>
+            <name>Connection Statistics</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -550,7 +550,7 @@ Descrição: Permite que os usuários se conectem interativamente a um computado
                     <type>0</type>
                     <item>
                         <host>Template - Windows Terminal Server RDP</host>
-                        <key>rdp.terminal.server[ATIVONUM]</key>
+                        <key>rdp.terminal.server[ACTIVENUM]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -562,7 +562,7 @@ Descrição: Permite que os usuários se conectem interativamente a um computado
                     <type>0</type>
                     <item>
                         <host>Template - Windows Terminal Server RDP</host>
-                        <key>rdp.terminal.server[INATIVONUM]</key>
+                        <key>rdp.terminal.server[INACTIVENUM]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -570,56 +570,56 @@ Descrição: Permite que os usuários se conectem interativamente a um computado
     </graphs>
     <value_maps>
         <value_map>
-            <name>★ STATUS ★ Check Porta</name>
+            <name>Port Check Status</name>
             <mappings>
                 <mapping>
                     <value>0</value>
-                    <newvalue>Inacessível</newvalue>
+                    <newvalue>Inaccessible</newvalue>
                 </mapping>
                 <mapping>
                     <value>1</value>
-                    <newvalue>Aberta</newvalue>
+                    <newvalue>Open</newvalue>
                 </mapping>
             </mappings>
         </value_map>
         <value_map>
-            <name>★ STATUS ★ Serviço</name>
+            <name>Service Status</name>
             <mappings>
                 <mapping>
                     <value>0</value>
-                    <newvalue>Iniciado</newvalue>
+                    <newvalue>Started</newvalue>
                 </mapping>
                 <mapping>
                     <value>1</value>
-                    <newvalue>Pausado</newvalue>
+                    <newvalue>Paused</newvalue>
                 </mapping>
                 <mapping>
                     <value>2</value>
-                    <newvalue>Iniciar Pendente</newvalue>
+                    <newvalue>Start Pending</newvalue>
                 </mapping>
                 <mapping>
                     <value>3</value>
-                    <newvalue>Pausa Pendente</newvalue>
+                    <newvalue>Pause Pending</newvalue>
                 </mapping>
                 <mapping>
                     <value>4</value>
-                    <newvalue>Continuar Pendente</newvalue>
+                    <newvalue>Continue Pending</newvalue>
                 </mapping>
                 <mapping>
                     <value>5</value>
-                    <newvalue>Parar Pendente</newvalue>
+                    <newvalue>Stop Pending</newvalue>
                 </mapping>
                 <mapping>
                     <value>6</value>
-                    <newvalue>Parado</newvalue>
+                    <newvalue>Stopped</newvalue>
                 </mapping>
                 <mapping>
                     <value>7</value>
-                    <newvalue>Desconhecido</newvalue>
+                    <newvalue>Unknown</newvalue>
                 </mapping>
                 <mapping>
                     <value>255</value>
-                    <newvalue>Desconhecido</newvalue>
+                    <newvalue>Unknown</newvalue>
                 </mapping>
             </mappings>
         </value_map>
