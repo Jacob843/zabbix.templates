@@ -23,7 +23,7 @@
                     <name>RDP Terminal Server</name>
                 </application>
                 <application>
-                    <name>Service</name>
+                    <name>Services</name>
                 </application>
             </applications>
             <items>
@@ -369,7 +369,7 @@ Description: Allows users to connect interactively to a remote computer. Remote 
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service</name>
+                            <name>Services</name>
                         </application>
                     </applications>
                     <valuemap>
@@ -416,7 +416,7 @@ Description: Provides registered licenses for Remote Desktop Services clients. I
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service</name>
+                            <name>Services</name>
                         </application>
                     </applications>
                     <valuemap>
